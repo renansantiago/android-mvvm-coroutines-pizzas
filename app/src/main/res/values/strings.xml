@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Pizzas</string>
+    <string name="toolbar">Flavors</string>
+    <string name="title_activity_flavors">Flavors</string>
+    <string name="title_activity_details">Order Details</string>
+    <string name="money">$ %1$s</string>
+    <string name="flavor">Flavor 1</string>
+    <string name="flavor2">Flavor 2</string>
+    <string name="empty">-</string>
+    <string name="total">Total: $ %1$s</string>
+    <string name="finish">Finish</string>
+    <string name="home">Home</string>
+    <string name="noEmpty">Select at least one flavor to finish</string>
+    <string name="success">Your order has been finished successfully!</string>
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBg">
+
+    <TextView
+        android:id="@+id/tv_flavor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_16x"
+        android:text="@string/flavor"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tv_flavor2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_8x"
+        android:text="@string/empty"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_flavor"
+        app:layout_constraintTop_toBottomOf="@+id/tv_flavor"
+        tools:text="Mozzarella" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_8x"
+        android:text="@string/empty"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        tools:text="$ 1" />
+
+    <TextView
+        android:id="@+id/tv_flavor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_16x"
+        android:text="@string/flavor2"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toRightOf="@+id/tv_flavor"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_8x"
+        android:text="@string/empty"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_flavor2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_flavor2"
+        tools:text="Pepperoni" />
+
+    <TextView
+        android:id="@+id/tv_price2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_8x"
+        android:text="@string/empty"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_name2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name2"
+        tools:text="$ 2" />
+
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_16x"
+        android:text="@string/empty"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_price"
+        app:layout_constraintRight_toRightOf="@+id/tv_price2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price"
+        tools:text="Total: $ 3" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_flavors"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/space_24x"
+        android:layout_marginBottom="@dimen/space_24x"
+        app:layout_constraintBottom_toTopOf="@+id/btn_finish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_total" />
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_16x"
+        android:padding="@dimen/space_16x"
+        android:text="@string/finish"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
